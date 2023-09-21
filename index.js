@@ -14,8 +14,13 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   // res.send('<h1>Phornhathai Thanomwong</h1>')
-  res.render(__dirname + '/views/index.ejs', {name : "Phornhathai" , lastname : "Thanomwong"});
+  // res.render(__dirname + '/views/index.ejs', {name : "Phornhathai" , lastname : "Thanomwong"});
+  const items = ["Iphone 15 pro max" , "Iphone 15 pro" , "Iphone 15 plus"];
+
+  res.render('index', {items});
 });
+  
+
 app.get('/about', (req, res) => {
   // res.send('<h1>Phornhathai Thanomwong</h1>')
   res.render(__dirname + '/views/about.ejs');

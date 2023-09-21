@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 9</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
     <h1>Hello Aum</h1>
     <p>สวัสดีทุกๆคน</p>
     <p>สวัสดีทุกๆคน</p>
     <h2>Test</h2>          
-    <p class="demo">ฉันชื่อ <%= name%> นามสกุล <%= lastname%></p>
-    <img src= "/public/images/twitter.png" alt="logo error" width="50px">
+    <!-- <p class="demo">ฉันชื่อ <%= name%> นามสกุล <%= lastname%></p> -->
+    <img src= "/images/twitter.png" alt="logo error" width="50px">
+    <ul>
+    <%for (let i = 0 ;i < items.length ; i++){ %>
+        <li><%= items[i]%></li>
+    <%}%>
+    </ul>
 </body>
 </html>
